@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Вітаємо на нашому сучасному сайті!</h1>
+        <form action="/submit" method="post">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+          
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="favoriteFictionalWorld">Улюблений вигаданий світ:</label>
+        <input type="text" id="favoriteFictionalWorld" name="favoriteFictionalWorld" required>
+
+        <label for="favoriteLoPers">Улюблений персонаж сезонів Лололошки:</label>
+        <input type="text" id="favoriteLoPers" name="favoriteLoPers" required>
+          
+        <label for="gender">Гендер:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Оберіть гендер</option>
+            <option value="male">Чоловік</option>
+            <option value="female">Жінка</option>
+            <option value="other">Агендер: Не ідентифікую себе з жодним гендером або не відчуваю жодного гендеру.</option>
+            <option value="other">Бі: Ідентифікую себе з двома різними гендерами, які можуть змінюватися в залежності від обставин або часу.</option>
+            <option value="other">Демігент - Частково або в основному, але не повністю, пов'язаний з певним гендером.</option>
+            <option value="other">Біогендер: наявність статі, яка тісно пов’язана з природою.</option>
+            <option value="other">Boyflux: Я ідентифікую себе як чоловік, але відчуваю різні рівні чоловічої ідентичності. Це може варіюватися від відчуття агендера до повного відчуття чоловічого гендеру</option>
+            <option value="other">Кондигендер: Відчуваю свою стать лише за певних обставин.</option>
+            <option value="other">Напівфлюкс: поєднання кількох статей, причому деякі статі статичні, а інші коливаються за інтенсивністю.</option>
+            <option value="other">Girlflux: Індефікую себе як жінку, але з різною інтенсивністю жіночої ідентичності.</option>
+            <option value="other">Омнігендер: Маю або відчуваю всі статі.</option>
+            <option value="other">Genderfuzz: кілька статей розмиті разом.</option>
+            <option value="other">Femfluid: особа мінлива або коливається щодо жіночої статі.</option>
+            <option value="other">Цетерогендер: Небінарна стать, маю специфічні чоловічі, жіночі або нейтральні почуття.</option>
+            <option value="other">Трансгендер: Мій гендер не відповідає статі, яку мені призначили при народженні</option>
+            <option value="other">Ангел</option>
+            <option value="other">Демон</option>
+            <option value="other">Дух</option>
+            <option value="other">Привид</option>
+            <option value="other">Полтергейст</option>
+            <option value="other">Спірит</option>
+            <option value="other">Шадоу</option>
+            <option value="other">Ектоплазма</option>
+            <option value="other">Індифікуюся як Бог</option>
+            <option value="other">Чайник</option>
+            <option value="other">Холодильник</option>
+            <option value="other">Тапок</option>
+            <option value="other">Стіл</option>
+            <option value="other">Крісло</option>
+            <option value="other">Пляшка</option>
+            <option value="other">Телефон</option>
+            <option value="other">Комп'ютер</option>
+            <option value="other">Число</option>
+            <option value="other">Немає</option>
+            <option value="other">Пустота</option>
+            <option value="other">Світоходець</option>
+            <option value="other">Даск</option>
+            <option value="other">Пустотний маг</option>
+            <option value="other">Сейджуро Акаши</option>
+            <option value="other">T-34</option>
+            <option value="other">F-16</option>
+            <option value="other">Маріо</option>
+            <option value="other">Архонт</option>
+            <option value="other">Скарамуча</option>
+            <option value="other">Сяо</option>
+            <option value="other">Розарія</option>
+            <option value="other">Ембер</option>
+            <option value="other">Аянамі Рей</option>
+            <option value="other">Пірат</option>
+            <option value="other">Кавогендер: Гендер залежить від того яку каву я п'ю. Сьогодні - 'Еспресо-гендер', а завтра 'Латте-гендер'</option>
+            <option value="other">Я - Штучний інтелект</option>
+            <option value="other">Бот</option>
+            <option value="other">Райя Прайм</option>
+            <option value="other">ChatGPT</option>
+            <option value="other">Розумний банан</option>
+            <option value="other">Дракон</option>
+            <option value="other">Єдиноріг</option>
+            <option value="other">Грифон</option>
+            <option value="other">Ельф</option>
+            <option value="other">Вампір</option>
+            <option value="other">Гном</option>
+            <option value="other">Зомбі</option>
+            <option value="other">Відьма</option>
+            <option value="other">Колобок</option>
+            <option value="other">Сейлор Мун</option>
+            <option value="other">Мікаса Акерман</option>
+            <option value="other">Права нога Чікатіло</option>
+            <option value="other">Аутист</option>
+            <option value="other">Атеїст</option>
+            <option value="other">Фембойчик</option>
+            <option value="other">Фурі</option>
+            <option value="other">Квадробер(аутист)</option>
+            <option value="other">Tenda_E26CC8</option>
+            <option value="other">Четвертий енерго блок</option>
+            <option value="other">Чорний</option>
+            <option value="other">Білий</option>
+            <option value="" disabled selected>--------------------</option>
+            <option value="other">Кіт</option>
+            <option value="other">Собака</option>
+            <option value="other">Курка</option>
+            <option value="other">Корова</option>
+            <option value="other">Качка</option>
+            <option value="other">Мураха</option>
+            <option value="other">Павук</option>
+            <option value="other">Жук сонечко</option>
+            <option value="other">Пташка</option>
+            <option value="other">Черв'як</option>
+            <option value="other">Муха</option>
+            <option value="other">Світлячок</option>
+            <option value="other">Хамелеон</option>
+            <option value="other">Дельфін</option>
+            <option value="other">Пінгвін</option>
+            <option value="other">Ведмідь</option>
+            <option value="" disabled selected>Персонажі з ГВ(Голос Часу)</option>
+            <option value="other">Ашра</option>
+            <option value="other">Ео</option>
+            <option value="other">Седрік</option>
+            <option value="other">Матільда</option>
+            <option value="other">Лис</option>
+            <option value="other">Фарагонда</option>
+            <option value="other">Ебардо</option>
+            <option value="other">Окетра</option>
+            <option value="other">Сан-Фран</option>
+            <option value="" disabled selected>--------------------</option>
+            <option value="other">Хз</option>
+            <option value="other">Не хочу говорити</option>
+            <option value="other">Інше</option>
+            
+        </select>
+          
+          <button type="submit">Зареєструватися</button>
+        </form>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  
+    <script>
+    $(document).ready(function() {
+      $('#gender').select2();
+    });
+    </script>
+</body>
+</html>

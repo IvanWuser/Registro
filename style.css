@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    text-align: center;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555; /* Злегка темніший колір для кращої видимості */
+}
+
+input, select {
+  width: 80%;
+  padding: 12px; /* Трохи більше відступів для зручності */
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px; /* Єдиний розмір шрифту для однорідності */
+}
+button {
+    margin-top: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px; /* Більше відступів для кнопки */
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Стилізувати Select2 */
+.select2-container--default .select2-selection--single {
+    box-sizing: content-box;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.select2-container--default .select2-results__option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #333;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@media only screen and (max-width: 600px) {
+  form {
+    max-width: 200px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .select2-container--default .select2-results__option {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  form {
+    max-width: 400px;
+  }
+}
